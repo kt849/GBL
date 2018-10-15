@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quickstart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Google Sheets API Android Quickstart"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="GBL"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".NotificationService" />
+
+        <receiver
+            android:name=".MyAlarmReceiver"
+            android:process=":remote" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="GBL"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".SalesMenu" />
+        <activity android:name=".ProductionMenu" />
+        <activity android:name=".ProductionGraphs" />
+        <activity android:name=".salesReport" />
+        <activity android:name=".ProductionReport" />
+        <activity android:name=".salesmenu2" />
+        <activity android:name=".salesreport2" />
+        <activity android:name=".pmonthly_report" />
+        <activity android:name=".pyearly_report"></activity>
+    </application>
+
+</manifest>
