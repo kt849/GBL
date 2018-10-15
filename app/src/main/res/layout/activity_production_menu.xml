@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlt"
+    android:background="@drawable/background"
+    tools:context=".ProductionMenu">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="39dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:drawableTop="@drawable/ic_logout"
+        android:onClick="Logout"
+        android:text="Logout"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/colorBackground"
+        android:drawableTop="@drawable/ic_back"
+        android:onClick="backtomenu"
+        android:text="back"
+        android:textColor="@android:color/holo_blue_bright" />
+    <Button
+        android:id="@+id/pdaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="184dp"
+        android:background="@android:color/background_light"
+        android:drawableTop="@drawable/daily"
+        android:onClick="menu2"
+        android:text="Daily"
+        android:textColor="@android:color/holo_blue_bright" />
+
+
+    <Button
+        android:id="@+id/pmonthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/pdaily"
+        android:layout_marginEnd="80dp"
+        android:onClick="menu2"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/holo_blue_bright"
+        android:drawableTop="@drawable/monthly"
+        android:text="Monthly" />
+
+    <Button
+        android:id="@+id/pyearly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="295dp"
+        android:onClick="menu2"
+        android:drawableTop="@drawable/yearly"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/holo_blue_bright"
+        android:text="Yearly" />
+
+
+
+</RelativeLayout>
